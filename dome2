@@ -1,0 +1,15 @@
+#define inPin 7
+#define outPin 13
+const int Delay_time=4000;
+
+void setup(){
+	pinMode(inPin,INPUT);
+	pinMode(outPin,OUTPUT);
+	
+}
+void loop(){
+  char val=digitalRead(inPin);
+  digitalWrite(outPin,val);
+  delay(Delay_time);
+	
+}
